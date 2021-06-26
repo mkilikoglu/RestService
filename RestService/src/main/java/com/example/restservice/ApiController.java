@@ -23,7 +23,7 @@ public class ApiController {
     }
 
     @GetMapping("/get-token")
-    public Result serviceTest (@RequestParam(value = "userName") String userName,@RequestParam(value = "password") String password){
+    public Result serviceTest (@RequestParam(value = "username") String userName,@RequestParam(value = "password") String password){
 
         return new Result("01","Invalid Username or password");
     }
